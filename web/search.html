@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VITogether Alpha V1.0</title>
+    <script src="js/search.js"></script>
+
+</head>
+<body>
+
+    <div id="l-form" class="l-s-form">
+      <h3 align="centre"><div class="a-logo">VITogether</div></h3>
+        <p class="l-s-form-light-text" id="dragon">Enter faculty name to search</p>
+        <form onsubmit="return false">
+          <div class="autocomplete">
+            <input type="text" name="u" placeholder=">" required="required" id="search_input_box" />
+          </div>
+            <button class="btn btn-primary btn-block btn-large" onclick="search_op()">Search <i class="fa fa-search"></i></button>
+        </form>
+        <br>
+    </div>
+
+    <div id="l-form-1" class="l-s-form" style="top: 20%" hidden="true">
+      <h3 align="centre"><div class="a-logo">VITogether</div></h3>
+        <form onsubmit="return false">
+          <div class="autocomplete">
+            <input type="text" name="u" placeholder=">" required="required" id="search_input_box_1" />
+          </div>
+            <button class="btn btn-primary btn-block btn-large" onclick="search_op_2()">Search <i class="fa fa-search"></i></button>
+            
+            
+            <br>
+          <h1 align="centre" style="color: white" id="fac_name"></h1>
+          <h3 align="centre" style="color: white" id="fac_desig"></h3>
+          <h3 align="centre" style="color: white" id="fac_school"></h3>
+          
+          <br>
+            <div align="centre" class="autocomplete" id="link_text" hidden="true"></div>
+            <h3 align="centre" style="color: white;" id="text-link--" hidden="true">Link: </h3>
+            <button align="centre" class="btn-link" onclick="cpy()" id="link_l" hidden="true"></button>
+            <h3 id="error_text" align="centre" style="color: red;" hidden="true">Oops, the requested link is not available in this server yet, refresh this page after a while </h3>
+            <br>
+        </form>
+    </div>
+
+    <div class="footer">
+      <p class="footer-text">Copyright © Team <a href="https://github.com/inboxsgk/VITogether" style="color: white;">VITogether</a></p>
+      <p class="footer-text"><a onclick="logout()"><u>Logout</u></a></p>
+    </div>
+
+
+
+
+  </body>
+ 
+</html>
